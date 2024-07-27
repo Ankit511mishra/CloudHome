@@ -1,0 +1,115 @@
+/* Styles for the entire page */
+.website-page {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #001f3f,
+    #0074d9
+  ); /* Blue gradient background */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 100px; /* To avoid overlap with the fixed navbar */
+  overflow: auto; /* Allow scrolling */
+}
+
+/* Main content container */
+.main-content-website {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  color: white;
+  text-align: center; /* Center the text inside the container */
+}
+
+.content-section-website {
+  width: 100%;
+  padding: 20px;
+  background: rgba(
+    0,
+    0,
+    51,
+    0.7
+  ); /* Slightly transparent dark blue background */
+  border-radius: 10px;
+  animation: fadeIn 2s;
+}
+
+.content {
+  display: flex;
+  flex-direction: row; /* Arrange children in a row */
+  width: 100%; /* Full width */
+}
+
+/* Styling for the paragraph */
+.paragraph {
+  flex: 3; /* Takes up 60% of the width */
+  padding-right: 20px; /* Space between paragraph and highlights */
+}
+
+.paragraph p {
+  font-size: 22px; /* Larger font size for better readability */
+  line-height: 1.8; /* Improve readability with line spacing */
+  color: #d1eaff; /* Light blue color for better contrast against dark background */
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Add padding for spacing */
+}
+
+.highlighted {
+  color: #39cccc; /* Light teal for the first word */
+  font-weight: bold;
+}
+
+/* Highlights section */
+.highlights {
+  flex: 2; /* Takes up 40% of the width */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  padding-left: 20px; /* Space between paragraph and highlights */
+}
+
+.highlight-item {
+  margin-bottom: 15px; /* Spacing between points */
+  font-size: 18px; /* Slightly larger font size for better readability */
+  color: #d1eaff; /* Light blue color for consistency */
+  text-align: center; /* Center text */
+}
+
+/* Heading styling */
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px; /* Space below heading */
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(
+    0,
+    0,
+    51,
+    0.8
+  ); /* Slightly transparent dark blue background */
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0; /* Ensure the footer is at the bottom of the page */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
